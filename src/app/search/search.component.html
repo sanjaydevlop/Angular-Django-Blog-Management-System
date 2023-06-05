@@ -1,0 +1,27 @@
+<!-- <input type="text" [(ngModel)]="searchTerm">
+<button (click)="search()">Search</button> -->
+
+
+<!-- <input type="text" [formControl]="searchControl" placeholder="Search by name">
+<button (click)="onSearch()">Search</button>
+
+<ul *ngIf="searchResults.length > 0">
+  <li *ngFor="let result of searchResults">
+    {{ result.name }}
+  </li>
+</ul> -->
+
+<!-- HTML -->
+<div class="search-container">
+  <input type="text" [formControl]="searchControl" placeholder="Search by name">
+  <button (click)="onSearch()">Search</button>
+</div>
+
+<ul class="dropdown-list" *ngIf="searchResults.length > 0">
+  <li class="dropdown-item" *ngFor="let result of searchResults">
+    
+    <button (click)="route_to(result.name)">{{ result.name }}</button>
+
+  </li>
+</ul>
+

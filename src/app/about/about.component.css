@@ -1,0 +1,132 @@
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+/* .json-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.json-item {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.json-card {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.json-name,
+.json-email,
+.json-age {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  font-size: 16px;
+}
+
+.json-name {
+  font-weight: bold;
+} */
+
+.json-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.json-item {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.json-card {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer !important;
+
+}
+
+.json-card:hover {
+  transform: scale(1.05);
+  background-color: rgb(213, 180, 227);
+}
+
+.json-name,
+.json-email,
+.json-author {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  font-size: 16px;
+}
+
+.json-name {
+  font-weight: bold;
+}
+
+.json-author {
+  display: none;
+}
+
+.json-card:hover .json-author {
+  display: block;
+}
+

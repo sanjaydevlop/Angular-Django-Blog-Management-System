@@ -1,0 +1,20 @@
+.bar-chart {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #000000;
+  display: flex;
+  
+  justify-content: space-between;
+}
+
+.bar {
+  flex-grow: 1;
+  background-color: #007bff;
+  transition: height 0.5s;
+}
+
+.bare {
+  flex-grow: 1;
+  background-color: #00551b;
+  transition: height 0.5s;
+}

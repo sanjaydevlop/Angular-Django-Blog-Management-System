@@ -1,0 +1,43 @@
+<!-- <ng-container *ngIf="jsonData">
+  <div class="json-list">
+    <div class="json-item" *ngFor="let item of jsonData" (mouseenter)="onCardHover(item)">
+      <div class="json-card" [ngClass]="{ 'hovered': item.hovered }" (click)="onCardClick(item.name)">
+        <p class="json-name">{{ truncateString(item.name, 12) }}</p>
+        <p class="json-email">Blog::{{ truncateString(item.blog, 12) }}</p>
+        <p class="json-author" *ngIf="item.hovered">Author::{{ item.aname }}</p>
+      </div>
+    </div>
+  </div>
+</ng-container> -->
+
+<!-- <ng-container *ngIf="jsonData">
+  <div class="json-list">
+    <div class="json-item" *ngFor="let item of jsonData" (mouseenter)="onCardHover(item)">
+      <div class="json-card" [ngClass]="{ 'hovered': item.hovered }" (click)="onCardClick(item.name)">
+        <p class="json-name">{{ truncateString(item.name, 12) }}</p>
+        <p class="json-email">Blog::{{ truncateString(item.blog, 12) }}</p>
+        <p class="json-author" *ngIf="item.hovered">Author::{{ item.aname }}</p>
+        <button class="delete-button" (click)="onDeleteButtonClick(item)">Delete</button>
+      </div>
+    </div>
+  </div>
+</ng-container> -->
+
+<ng-container *ngIf="jsonData">
+  <div class="json-list">
+    <div class="json-item" *ngFor="let item of jsonData" (mouseenter)="onCardHover(item)">
+      <div class="json-card" [ngClass]="{ 'hovered': item.hovered }" (click)="onCardClick(item.name)">
+        <p class="json-name">{{ truncateString(item.name, 12) }}</p>
+        <p class="json-email">Blog::{{ truncateString(item.blog, 12) }}</p>
+        <p class="json-author" *ngIf="item.hovered">Author::{{ item.aname }}</p>
+    </div>
+    <button class="delete-button" (click)="onDeleteButtonClick(item.id)">Delete</button>
+
+    </div>
+  </div>
+</ng-container>
+
+
+
+
+<router-outlet></router-outlet>

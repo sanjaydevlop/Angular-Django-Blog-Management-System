@@ -1,0 +1,26 @@
+<form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label>Name of the Author</label>
+    <input type="text" formControlName="aname" readonly>
+    <div *ngIf="reactiveForm.get('aname')?.invalid && reactiveForm.get('aname')?.touched">
+      <div *ngIf="reactiveForm.get('aname')?.errors?.['required']">Name is required</div>
+    </div>
+  </div>
+    <div>
+      <label>Name of the Blog</label>
+      <input type="text" formControlName="name">
+      <div *ngIf="reactiveForm.get('name')?.invalid && reactiveForm.get('name')?.touched">
+        <div *ngIf="reactiveForm.get('name')?.errors?.['required']">Name is required</div>
+      </div>
+    </div>
+    <div>
+      <label>Blog</label>
+      <textarea formControlName="blog"style="width: 100%; height: 200px;"></textarea>
+      <div *ngIf="reactiveForm.get('blog')?.invalid && reactiveForm.get('email')?.touched">
+        <div *ngIf="reactiveForm.get('blog')?.errors?.['required']">Blog is required</div>
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="reactiveForm.invalid">Submit</button>
+  </form>
+  

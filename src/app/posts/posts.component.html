@@ -1,0 +1,33 @@
+<h2>Posts</h2>
+
+<form [formGroup]="postForm" (ngSubmit)="createPost()">
+  <div>
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" formControlName="title">
+    <div *ngIf="postForm.get('title')?.invalid && postForm.get('title')?.touched" class="error-message">
+      Title is required.
+    </div>
+  </div>
+  <div>
+    <label for="body">Body:</label>
+    <textarea id="body" name="body" formControlName="body"></textarea>
+    <div *ngIf="postForm.get('body')?.invalid && postForm.get('body')?.touched" class="error-message">
+      Body is required.
+    </div>
+  </div>
+  <button type="submit" [disabled]="postForm.invalid">Create Post</button>
+</form>
+
+<hr>
+
+<ul *ngIf="posts.length > 0; else noPostsMessage">
+  <li *ngFor="let post of posts">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.body }}</p>
+    <button (click)="deletePost(post.id)">Delete</button>
+  </li>
+</ul>
+
+<ng-template #noPostsMessage>
+  <p>No posts available.</p>
+</ng-template>

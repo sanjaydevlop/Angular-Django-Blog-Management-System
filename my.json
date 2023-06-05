@@ -1,0 +1,60 @@
+{
+  "signup": [
+    {
+      "fname": "Manoj",
+      "lname": "Adhikari",
+      "email": "manojadhikari@gmail.com",
+      "phone": "234324234",
+      "password": "asdasdf",
+      "id": 1
+    },
+    {
+      "fname": "shivam",
+      "lname": "adhikari",
+      "email": "shivamadhikari@gmail.com",
+      "phone": "32432",
+      "password": "asdf",
+      "id": 2
+    },
+    {
+      "fname": "Sanjay",
+      "lname": "Surya",
+      "email": "sanjaysurya2527@gmail.com",
+      "phone": "8688029341",
+      "password": "qwertyuiop",
+      "id": 3
+    },
+    {
+      "fname": "Shitij",
+      "lname": "Reddy",
+      "email": "sanjaysurya2527@gmail.com",
+      "phone": "8688029341",
+      "password": "qwer",
+      "id": 4
+    },
+    {
+      "fname": "Subbu",
+      "lname": "Subbu",
+      "email": "sanjaysurya2527@gmail.com",
+      "phone": "8688029341",
+      "password": "Subbu",
+      "id": 5
+    },
+    {
+      "fname": "Shubman",
+      "lname": "Gill",
+      "email": "sanjaysurya2527@gmail.com",
+      "phone": "8688029341",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "fname": "Gill",
+      "lname": "Gill",
+      "email": "sanjaysurya2527@gmail.com",
+      "phone": "08688029341",
+      "password": "qwe",
+      "id": 7
+    }
+  ]
+}

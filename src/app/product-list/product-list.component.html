@@ -1,0 +1,12 @@
+<h2>Product List</h2>
+<button (click)="toggleSort()">Toggle Sort</button>
+<ul>
+  <li *ngFor="let product of products; let i = index">
+    {{ product }}
+    <button (click)="deleteProduct(i)">Delete</button>
+    <button (click)="updateProduct(i)">Update</button>
+  </li>
+</ul>
+
+<button (click)="addProduct()">Add Product</button>
+
