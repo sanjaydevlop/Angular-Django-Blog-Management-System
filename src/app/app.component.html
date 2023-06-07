@@ -1,13 +1,23 @@
-
-
-<h1 >Hi, {{displayname}}! Welcome to NSL Blogs</h1>
-<nav>
-  <ul>
-    <li><a routerLink="/" routerLinkActive="active" style="color: rgb(255, 242, 0); font-weight: bold; font-size: 20px;">Home</a></li>
-    <li><a routerLink="/about" routerLinkActive="active" style="font-size: 20px;">My Blogs</a></li>
-    <li><a routerLink="/form" routerLinkActive="active" style="font-size: 20px;">Create New Blog</a></li>
-    <li><a routerLink="/search" routerLinkActive="active" style="font-size: 20px;">Search</a></li>
-  </ul>
-</nav>
+<body>
+<mat-card class="animated-card">
+  <mat-card-content>
+    <h1 class="animated-heading">Hello, {{ displayname }}!!! Welcome to NSL Blogs</h1>
+  </mat-card-content>
+</mat-card>
+<mat-toolbar color="primary">
+  <button mat-button routerLink="/" routerLinkActive="active">
+    Home
+  </button>
+  <button mat-button routerLink="/about" routerLinkActive="active">
+    My Blogs
+  </button>
+  <button mat-button routerLink="/form" routerLinkActive="active">
+    Create New Blog
+  </button>
+  <button mat-button routerLink="/search" routerLinkActive="active">
+    Search
+  </button>
+</mat-toolbar>
 
 <router-outlet></router-outlet>
+</body>

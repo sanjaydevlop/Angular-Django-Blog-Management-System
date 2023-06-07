@@ -16,6 +16,12 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 import { LoginComponent } from './login/login.component';
 import { SingupComponent } from './signup/signup.component';
 import { AuthGuard } from './auth.guard';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatToolbarModule } from '@angular/material/toolbar'; // Add this import
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -32,6 +38,11 @@ import { AuthGuard } from './auth.guard';
     SingupComponent
   ],
   imports: [
+    MatFormFieldModule,
+    MatCardModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatSlideToggleModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
@@ -49,7 +60,8 @@ import { AuthGuard } from './auth.guard';
       {path:'home',canActivate:[AuthGuard],component:HomeComponent}
 
       
-    ])
+    ]),
+    BrowserAnimationsModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

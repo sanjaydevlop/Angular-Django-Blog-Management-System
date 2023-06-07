@@ -44,3 +44,41 @@ form {
     cursor: not-allowed;
   }
   
+
+
+   /* .form-card {
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: cardAnimation 1s ease-out;
+  }
+  
+  @keyframes cardAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .form-card {
+    
+    animation: cardAnimation 1s ease-in;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 16px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+  }
+   */

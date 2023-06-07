@@ -1,45 +1,61 @@
-.container {
-    margin-top: 50px;
-  }
-  
-  .form-box {
+
+
+
+   .login-card {
+    margin-top: 20px ;
+    margin-left: 10px;
     max-width: 400px;
-    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: cardAnimation 1s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
   }
   
-  .form-group label {
+  @keyframes cardAnimation {
+    0% { 
+      transform: translateY(-50px) translateX(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) translateX(-50px);
+      opacity: 1;
+    }
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .mat-headline {
+    margin-top: 0;
+    margin-bottom: 16px;
     font-weight: bold;
-  }
-  
-  .form-group input[type="text"],
-  .form-group input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .form-group input[type="text"]:focus,
-  .form-group input[type="password"]:focus {
-    outline: none;
-    box-shadow: 0 0 5px #2196F3;
-    border-color: #2196F3;
-  }
-  
-  .form-group p {
-    margin-top: 10px;
-  }
-  
-  .form-group p a {
-    color: #2196F3;
   }
   
   .btn-success {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 16px;
   }
   
+  .center-text {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #0d0080;
+  }
+
+  .mat-form-field {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 16px;
+  }

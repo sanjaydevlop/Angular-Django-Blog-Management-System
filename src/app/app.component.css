@@ -1,35 +1,76 @@
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #333;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  nav li a {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  nav li a:hover {
-    background-color: #555;
-  }
-  nav ul li a.active {
-    color: #f00; /* Change this to the desired color for active navigation items */
-  }
-  
- 
-  button {
+button {
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #f6e01c;
+    color: #490202;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 24px;
+    height: 48px; 
+    min-width: 120px;
+
   }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://www.webnode.com/blog/wp-content/uploads/2019/04/blog2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+mat-toolbar {
+  background-color: #b1a2a2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+mat-button {
+  color: #fff;
+  font-size: 24px; 
+  height: 48px; 
+  min-width: 120px;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+.active {
+  background-color: rgb(104, 209, 134);
+}
+
+mat-slide-toggle {
+  margin-top: 16px;
+}
+
+.animated-card {
+  margin: 16px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: cardAnimation 1s ease-out;
+}
+
+@keyframes cardAnimation {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animated-heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  color: #0d0080;
+  animation: headingAnimation 5s ease-in-out;
+}
+
+@keyframes headingAnimation {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+

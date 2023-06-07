@@ -1,19 +1,20 @@
-<div class="container">
-    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-box">
-        <h3>Login</h3>
-        <div class="form-group">
-            <label for="fname">User Name</label>
-            <input type="text" formControlName="fname" id="username" class="form-control mb-3 mt-3" placeholder="Enter First Name"/>
-        </div>
-
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" formControlName="password" id="password" class="form-control mb-3 mt-3" placeholder="Enter Password"/>
-        </div>
-
+<mat-card class="login-card" [@cardAnimation]>
+    <mat-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-box">
+        <h3 class="mat-headline center-text">Login</h3>
+        <mat-form-field class="form-group" appearance="fill">
+          <mat-label>User Name</mat-label>
+          <input matInput formControlName="fname" id="username" placeholder="Enter First Name"/>
+        </mat-form-field>
+        <mat-form-field class="form-group" appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" formControlName="password" id="password" placeholder="Enter Password"/>
+        </mat-form-field>
         <p>Create a new account? <a routerLink="/signup" (click)="sbtn1()">Signup</a></p>
-        <button type="submit" (click)="displayname()"class="btn btn-success">Login</button>
-    </form>
-</div>
+        <button mat-raised-button type="submit" (click)="displayname()" class="btn-success">Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  
 
 <router-outlet></router-outlet>
