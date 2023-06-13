@@ -1,132 +1,89 @@
-h2 {
-    color: #333333;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    width: 300px;
-    margin-bottom: 20px;
-  }
-  
-  form div {
-    margin-bottom: 10px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  p {
-    margin-bottom: 20px;
-  }
-  
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-  }
 
-  
-  .json-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .json-item {
-    width: 300px;
-    margin-bottom: 10px;
-  }
-  
-  .json-card {
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    padding: 10px;
-    transition: all 0.3s ease;
-    cursor: pointer !important;
+.read-more {
+  font-size: 25px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 4px;
+}
+.homebar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d232c;
+  padding: 10px;
+  height: 80px;
+}
 
-  }
-  
-  .json-card:hover {
-    transform: scale(1.05);
-    background-color: rgb(213, 180, 227);
-  }
-  
-  .json-name,
-  .json-email,
-  .json-author {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 100%;
-    font-size: 16px;
-  }
-  
-  .json-name {
-    font-weight: bold;
-  }
-  
-  .json-author {
-    display: none;
-  }
-  
-  .json-card:hover .json-author {
-    display: block;
-  }
-  
-  .home-heading {
-    font-size: 40px;
-    font-weight: bold;
-    color: #f3e7e7;
-    text-align: center;
-    padding: 10px;
-    background-color: #1d232c;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+.json-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+}
 
-  .logout-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #4322ff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
+.json-item {
+  flex: 0 0 calc(50% - 20px); /* Two cards per row with some spacing */
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box; /* Include padding in card width calculation */
   
-  .logout-button:hover {
-    background-color: #f44336;
-  }
+}
+
+.json-card {
   
+  width: 100%;
+  height: auto; /* Allow cards to adjust height based on content */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 40px;
+  background-color: rgb(179, 179, 167);
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Show ellipsis (...) for long text */
+  white-space: nowrap; /* Prevent text from wrapping */
+  
+  
+}
+.json-blog {
+  max-height: 3.5em; 
+  margin-bottom: 10px; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  font-size: 20px;
+}
+
+.hovered {
+  border: 2px solid black;
+}
+
+
+.home-heading {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f3e7e7;
+  
+} 
+
+.logout-button {
+  background-color: #4322ff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius:5px;
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  background-color: #f44336;
+}
+

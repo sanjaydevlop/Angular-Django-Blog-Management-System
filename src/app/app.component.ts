@@ -11,11 +11,16 @@ import { LoginComponent } from './login/login.component';
 export class AppComponent{
   title='product-list';
   displayname:null|string="";
+  isVisible:boolean=false;
   
   var1=localStorage.getItem('fname');
   constructor(private authService: AuthService) {}
-
+  val:boolean=false;
+  
   ngOnInit(): void {
+    if(this.authService.isLoggedIn()){
+      this.isVisible=true;
+    }
     let data=localStorage.getItem('fname');
     this.displayname=data;
     
@@ -31,8 +36,12 @@ export class AppComponent{
     });
     
   }
+  
   logout(){
     
     this.authService.logout();
 }
+
+
+
 }

@@ -3,7 +3,7 @@ button {
     background-color: #f6e01c;
     color: #490202;
     border: none;
-    border-radius: 4px;
+    border-radius: 40px;
     cursor: pointer;
     font-size: 24px;
     height: 48px; 
@@ -11,29 +11,25 @@ button {
 
   }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url("https://www.webnode.com/blog/wp-content/uploads/2019/04/blog2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
+  .flex-container {
+    flex-direction: row;
+    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 230px;
+    
+  }
 
 mat-toolbar {
-  background-color: #b1a2a2;
+  background-color: #184e6a;
   display: flex;
-  justify-content: space-between;
+  
   align-items: center;
   padding: 0 16px;
 }
 
-mat-button {
-  color: #fff;
-  font-size: 24px; 
-  height: 48px; 
-  min-width: 120px;
-}
+
 
 button:hover {
   background-color: #ffffff;
@@ -41,10 +37,6 @@ button:hover {
 
 .active {
   background-color: rgb(104, 209, 134);
-}
-
-mat-slide-toggle {
-  margin-top: 16px;
 }
 
 .animated-card {
@@ -74,3 +66,36 @@ mat-slide-toggle {
   100% { transform: scale(1); opacity: 1; }
 }
 
+
+@media (max-width: 767px) {
+  .navbar-nav.flex-column {
+    background-color: #343a40; /* Customize the background color */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding-top: 1rem;
+    width: 250px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-nav.flex-column.show {
+    transform: translateX(0);
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #fff; /* Customize the color of the hamburger icon */
+  }
+}

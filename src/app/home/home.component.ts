@@ -43,4 +43,19 @@ export class HomeComponent {
     this.searchTerm=name;
     this.router.navigate(['/search-results/'+name], { queryParams: { searchTerm: this.searchTerm } }); 
   }
+  getRandomColor(index: number): string {
+    const colors = [
+      'rgb(172, 221, 222)',
+      'rgb(202, 241, 222)',
+      'rgb(225, 248, 220)',
+      'rgb(254, 248, 221)',
+      'rgb(255, 231, 199)',
+      'rgb(247, 216, 186)'
+      
+    ];
+    return colors[index % colors.length];
+  }
+  removeQuotes(str: string): string {
+    return str.replace(/"/g, "");
+  }
 }

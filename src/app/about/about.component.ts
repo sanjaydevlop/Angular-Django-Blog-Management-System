@@ -64,6 +64,16 @@ export class AboutComponent {
       }
     );
   }
+  onCardDropped(event: CdkDragDrop<any[]>) {
+    const previousIndex = event.previousIndex;
+    const currentIndex = event.currentIndex;
+  
+    if (previousIndex !== currentIndex) {
+      const temp = this.jsonData[previousIndex];
+      this.jsonData[previousIndex] = this.jsonData[currentIndex];
+      this.jsonData[currentIndex] = temp;
+    }
+  }
   
   
 }

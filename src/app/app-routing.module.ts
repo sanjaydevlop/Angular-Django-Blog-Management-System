@@ -10,9 +10,10 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 import { LoginComponent } from './login/login.component';
 import { SingupComponent } from './signup/signup.component';
 import { AuthGuard } from './auth.guard';
+import { MyhomeComponent } from './myhome/myhome.component';
 
 const routes: Routes = [
-  { path: '', component: SingupComponent},
+  // { path: '', component: SingupComponent},
   { path: 'about', component: AboutComponent,canActivate:[AuthGuard]},
   { path: 'contact', component: ContactComponent,canActivate:[AuthGuard] },
   { path: 'form', component: ReactiveFormComponent,canActivate:[AuthGuard]},
@@ -21,7 +22,9 @@ const routes: Routes = [
   { path: 'search', component: SearchComponent,canActivate:[AuthGuard]},
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SingupComponent },
-  {path:'home',canActivate:[AuthGuard],component:HomeComponent}
+  {path:'home',canActivate:[AuthGuard],component:HomeComponent},
+  {path:'myhome',canActivate:[AuthGuard],component:MyhomeComponent}
+
 ];
 
 @NgModule({

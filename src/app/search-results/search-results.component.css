@@ -73,11 +73,12 @@
   }
    */
 
-   .search-results-title {
+   /* .search-results-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 32px;
-  }
+    color: rgb(255, 255, 255);
+  } */
   
   .search-results-list {
     list-style-type: none;
@@ -87,7 +88,7 @@
   .search-result-item {
     margin-bottom: 48px;
     padding: 24px;
-    background-color: #fff;
+    background-color: #c9b129;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
@@ -114,17 +115,9 @@
   }
   
 
-  .button-upvote {
-    background-color: green;
-    color: white;
-  }
   
-  .button-downvote {
-    background-color: red;
-    color: white;
-  }
 
-  .custom-list {
+  /* .custom-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -153,5 +146,48 @@
   
   .custom-list p {
     margin: 0;
+  } */
+
+
+  .result-details {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(133, 13, 13, 0.1);
+    margin-bottom: 20px;
+  }
+
+  /* Style for the "Comments:" label */
+  .result-field {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  /* Style for the custom list */
+  .custom-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  /* Style for each custom item */
+  .custom-item {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    border-left: 3px solid #555;
+  }
+  
+  
+  .custom-item p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #d61c1c;
+  }
+  
+  /* Style for the comment value */
+  .custom-item p span {
+    font-weight: normal;
+    color: #777;
   }
   

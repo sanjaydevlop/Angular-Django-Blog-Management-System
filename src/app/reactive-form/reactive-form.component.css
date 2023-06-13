@@ -1,25 +1,36 @@
 form {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 100%;
+    
+    margin-left:470px;
+    background-color:#66bbdd;
+    padding:20px;
+    border-radius: 20px;
+    margin-left: 20px;
   }
   
   div {
     margin-bottom: 20px;
+    font-size:large;
+    color: rgb(33, 23, 1);
+    
   }
-  
+  #check{
+    margin-top:30px;
+  }
   label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    
   }
   
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    width: 100%;
+  input[type="text"]
+  {
+    
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000 solid;
     border-radius: 4px;
+    
   }
   
   div.error {
@@ -30,55 +41,39 @@ form {
   
   button[type="submit"] {
     display: block;
-    width: 100%;
+    margin-left: 400px;
     padding: 10px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 400px;
   }
   
   button[type="submit"]:disabled {
-    background-color: #ccc;
+    background-color: #ea4856;
     cursor: not-allowed;
+    width: 400px;
+    margin-left: 400px;
   }
   
 
+#new-icon{
+  margin-left:500px;
+    margin-top:-530px;
+    width:700px;
+    height:500px;
+    border-radius: 20px;
+}
 
-   /* .form-card {
-    max-width: 400px;
-    margin: 50px auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    animation: cardAnimation 1s ease-out;
-  }
-  
-  @keyframes cardAnimation {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  .form-card {
-    
-    animation: cardAnimation 1s ease-in;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  mat-form-field {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 16px;
-  }
-  
-  button[type="submit"] {
-    width: 100%;
-    margin-top: 10px;
-  }
-   */
+
+:host ::ng-deep .ck-editor__editable_inline {
+  min-height: 500px !important;
+  border: 1px solid #000000 solid;
+  border-radius: 4px;
+}
+
+.newI{
+  max-width: 1000px;
+}

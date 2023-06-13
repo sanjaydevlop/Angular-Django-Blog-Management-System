@@ -28,13 +28,15 @@ export class SingupComponent implements OnInit {
   }
 
   singupdata(singup:FormGroup){
-    //console.log(this.singup.value);
     this.signuser = this.singup.value.fname
     this._http.post<any>("http://localhost:3000/signup", this.singup.value)
     .subscribe(res=>{
       alert('data added successfully');
       this.singup.reset();
       this._route.navigate(['login']);
+      window.location.reload();
+      
+      
     }, err=>{
       alert('Somthing went wrong');
     })

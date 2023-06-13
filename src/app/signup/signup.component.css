@@ -22,6 +22,7 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    
   }
   
   .form-group input[type="text"]:focus,
@@ -44,4 +45,11 @@
     width: 100%;
     margin-top: 10px;
   }
+
+#new-icon{
+  margin-left:200px;
+    margin-top:-350px;
+    width:300px;
+    height:300px;
+}
   

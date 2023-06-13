@@ -1,27 +1,6 @@
 {
   "formData": [
     {
-      "name": "Ratan Tata",
-      "blog": "Ratan Naval Tata (born 28 December 1937) is an Indian industrialist, philanthropist and former chairman of Tata Sons. He was a chairman of the Tata Group from 1990 to 2012, and interim chairman from October 2016 through February 2017. He continues to head its charitable trusts.[2][3] In 2008, he received the Padma Vibhushan, the second highest civilian honour in India, after receiving the Padma Bhushan, the third highest civilian honour in 2000.[4]\n\nHe is the son of Naval Tata, who was adopted by Ratanji Tata, son of Jamsetji Tata, the founder of the Tata Group. He graduated from the Cornell University College of Architecture with a bachelor's degree in architecture.[5] He joined Tata in 1961, where he worked on the shop floor of Tata Steel. He later succeeded J. R. D. Tata as chairman of Tata Sons upon the latter's retirement in 1991. Under his tenure the Tata Group acquired Tetley, Jaguar Land Rover, and Corus, in an attempt to turn Tata from a largely India-centric group into a global business. Tata is also one of the largest philanthropists in the world, having donated around 60–65% of his income to charity.",
-      "aname": "\"Sanjay\"",
-      "newDict": [],
-      "id": 1
-    },
-    {
-      "name": "Narayana Murthy",
-      "blog": "Nagavara Ramarao Narayana Murthy (/ˈnɑːˈrɑːjʌn ˈmuːrti/; born 20 August 1946) is an Indian billionaire businessman. He is one of the seven co-founders of Infosys,[5] and has previously served as the chairman, chief executive officer (CEO), president, and chief mentor[6] of the company before retiring and taking the title chairman emeritus.[7][8][9] As of April 2023, his net worth was estimated to be $4.1 billion, making him the 711th richest person in the world according to Forbes.[10]\n\nMurthy was born and raised in Shidlaghatta, Karnataka. Before starting Infosys, Murthy worked at the Indian Institute of Management Ahmedabad as chief systems programmer, and Patni Computer Systems in Pune, Maharashtra. He started Infosys in 1981 and was the CEO from 1981 to 2002, as well as the chairman from 2002 to 2011. In 2011, he stepped down from the board and became the chairman emeritus. In June 2013, Murthy was appointed as the executive chairman for a period of five years.[11][12]\n\nMurthy has been listed among the 12 greatest entrepreneurs of our time by Fortune magazine.[13] He has been described as the \"father of the Indian IT sector\" by Time magazine and CNBC for his contribution to outsourcing in India.[14][15] In 2005, he co-chaired the World Economic Forum in Davos, Switzerland.[16] Murthy has been honoured with the Padma Vibhushan[17] and Padma Shri awards.",
-      "aname": "\"Sanjay\"",
-      "newDict": [],
-      "id": 2
-    },
-    {
-      "name": "Marc Benioff",
-      "blog": "Marc Russell Benioff (born September 25, 1964)[2] is an American internet entrepreneur and philanthropist. Benioff is best known as the co-founder, chairman and CEO of the software company Salesforce, as well as being the owner of the magazine Time since 2018.[3][4]\n\nEarly life and education\nBenioff was raised in a Jewish family[5][6] in the San Francisco Bay Area.[7] He is the grandson of Marvin Lewis, a prominent California trial attorney and once-time member of the San Francisco Board of Supervisors who championed the creation of the BART system.[8][9] Benioff grew up in Hillsborough[10] and graduated from Burlingame High School in 1982.[11] Benioff received a Bachelor of Science in business administration from the University of Southern California, where he was a member of the Tau Kappa Epsilon fraternity, in 1986.[11][12]\n\nBenioff is a second cousin of showrunner and television writer David Benioff, known for Game of Thrones.[13] He is married to Lynne Benioff and has two children. The family lives in San Francisco, California.[3][11]\n\n",
-      "aname": "\"Sanjay\"",
-      "newDict": [],
-      "id": 3
-    },
-    {
       "name": "Anand Mahindra",
       "blog": "Anand Gopal Mahindra (born 1 May 1955) is an Indian billionaire businessman, and the chairman of Mahindra Group, a Mumbai-based business conglomerate.[3][4][5][6] The group operates in aerospace, agribusiness, aftermarket, automotive, components, construction equipment, defence, energy, farm equipment, finance and insurance, industrial equipment, information technology, leisure and hospitality, logistics, real estate and retail.[7] Mahindra is the grandson of Jagdish Chandra Mahindra, co-founder of Mahindra & Mahindra.\n\nAs of 2023, his net worth according to Forbes was estimated to be $2.1 billion.[8] He is an alumnus of Harvard University and Harvard Business School.[9] In 1996, he established Nanhi Kali, a non-government organisation that supports education for underprivileged girls in India.[10]\n\nHe is included by Fortune Magazine among the 'World's 50 Greatest Leaders',[11] and was in the magazine's 2011 listing of Asia's 25 most powerful businesspeople.[12] Anand was noted by Forbes (India) as their 'Entrepreneur of the Year' for 2013.[13] He was given the Padma Bhushan Award, the third Highest civilian award in India, in January 2020.",
       "aname": "\"Subbu\"",
@@ -36,6 +15,127 @@
         }
       ],
       "id": 4
+    },
+    {
+      "name": "Virat Kohli",
+      "blog": "Virat Kohli",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 5
+    },
+    {
+      "name": "Good",
+      "blog": "Good",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 6
+    },
+    {
+      "name": "dfsdasdsfc",
+      "blog": "asdfsdafv",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 7
+    },
+    {
+      "name": "Kaathikaaa",
+      "blog": "asdfsdf",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 8
+    },
+    {
+      "name": "Jaaaa",
+      "blog": "<p><i><strong>Jaaaaa</strong></i></p>",
+      "aname": "\"Subbu\"",
+      "newDict": [
+        {
+          "fname": "\"Subbu\"",
+          "value": "thokkale"
+        },
+        {
+          "fname": "\"Subbu\"",
+          "value": "Pora "
+        }
+      ],
+      "id": 9
+    },
+    {
+      "name": "Okay",
+      "blog": "<p><i><strong>Okay</strong></i></p>",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 10
+    },
+    {
+      "name": "Sathvik Reddy",
+      "blog": "<h2>Sathvik Reddy got the Visa</h2><p>&nbsp;</p><p><i><strong>Understood???</strong></i></p>",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 11
+    },
+    {
+      "name": "Jayayaya",
+      "blog": "<figure class=\"table\"><table><tbody><tr><td>fdsadfgdsaFG</td><td>SDFGHJHGFDSA</td><td>DFGHJHGFDSASDFVBVDSA</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure>",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 12
+    },
+    {
+      "name": "UMBC",
+      "blog": "<ol><li>This year’s rankings show UMBC jumping an impressive 25 spots on the list of Best National Universities and appearing on several other prestigious lists, distinguishing the university’s achievements on a national stage. This year’s rankings show UMBC jumping an impressive 25 spots on the list of Best National Universities and appearing on several other prestigious lists, distinguishing the university’s achievements on a national stage. This year’s rankings show UMBC jumping an impressive 25 spots on the list of Best National Universities and appearing on several other prestigious lists, distinguishing the university’s achievements on a national stage. This year’s rankings show UMBC jumping an impressive 25 spots on the list of Best National Universities and appearing on several other prestigious lists, distinguishing the university’s achievements on a national stage.&nbsp;</li><li>This year’s rankings show UMBC jumping an impressive 25 spots on the list of Best National Universities and appearing on several other prestigious lists, distinguishing the university’s achievements on a national stage.&nbsp;</li></ol><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 13
+    },
+    {
+      "name": "Shitij",
+      "blog": "<p>hello</p><p>Shitij&nbsp;</p><p>Bhai</p>",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 14
+    },
+    {
+      "name": "Head",
+      "blog": "<p><i><strong>Head &nbsp;hj</strong></i></p><p>&nbsp;</p><p>&nbsp;</p><p>awdaesfaedawdaesfaed</p>",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 15
+    },
+    {
+      "name": "Link",
+      "blog": "<p><a href=\"https://ckeditor.com/docs/ckeditor5/latest/support/faq.html#how-to-get-the-editor-instance-object-from-the-dom-element\">https://ckeditor.com/docs/ckeditor5/latest/support/faq.html#how-to-get-the-editor-instance-object-from-the-dom-element</a></p><p>Hello</p>",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 16
+    },
+    {
+      "name": "qwe",
+      "blog": "<p>qwe</p><p>&nbsp;</p><figure class=\"table\"><table><thead><tr><th>ok</th><th>ok</th><th>ss</th></tr><tr><th>ok</th><th>ok</th><th>ss</th></tr></thead></table></figure>",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 17
+    },
+    {
+      "name": "asdffdsadfsad",
+      "blog": "<ul><li>asdsfsddfdsdsf</li></ul>",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 18
+    },
+    {
+      "name": "wertghjuytrewq",
+      "blog": "<p><strong>fgfdsaAX</strong></p>",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 19
+    },
+    {
+      "name": "xscdfgfdsadf",
+      "blog": "<h2>sdfgdfsdafg</h2><p>&nbsp;</p><p><i>dsfdsdfdsfdsfdsf</i></p>",
+      "aname": "\"Subbu\"",
+      "newDict": [],
+      "id": 20
     }
   ]
 }

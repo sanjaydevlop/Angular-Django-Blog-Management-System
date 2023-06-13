@@ -22,6 +22,8 @@ import { MatToolbarModule } from '@angular/material/toolbar'; // Add this import
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { MyhomeComponent } from './myhome/myhome.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     SearchComponent,
     SearchResultsComponent,
     LoginComponent,
-    SingupComponent
+    SingupComponent,
+    MyhomeComponent
   ],
   imports: [
     MatFormFieldModule,
@@ -47,8 +50,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    CKEditorModule,
     RouterModule.forRoot([
-      { path: '', canActivate:[AuthGuard],component: HomeComponent},
+      // { path: '', canActivate:[AuthGuard],component: HomeComponent},
       { path: 'about', canActivate:[AuthGuard],component: AboutComponent },
       { path: 'contact', canActivate:[AuthGuard],component: ContactComponent },
       { path: 'form',canActivate:[AuthGuard], component: ReactiveFormComponent},
@@ -57,7 +61,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
       { path: 'search',canActivate:[AuthGuard], component: SearchComponent },
       { path: 'signup', component: SingupComponent },
       { path: 'login', component: LoginComponent },
-      {path:'home',canActivate:[AuthGuard],component:HomeComponent}
+      {path:'home',canActivate:[AuthGuard],component:HomeComponent},
+      {path:'myhome',canActivate:[AuthGuard],component:MyhomeComponent}
 
       
     ]),

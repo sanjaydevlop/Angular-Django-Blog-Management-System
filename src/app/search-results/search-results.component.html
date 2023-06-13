@@ -1,4 +1,4 @@
-<h2 class="search-results-title">Search Results</h2>
+<h1 class="search-results-title" style="color: rgb(246, 220, 182);">Search Results</h1>
 
 <ul class="search-results-list">
   <li class="search-result-item" *ngFor="let result of searchResults">
@@ -12,7 +12,7 @@
     </div>
     <div class="result-details">
       <p class="result-field">Blog:</p>
-      <p>{{ result.blog }}</p>
+      <span [innerHTML]="result.blog"></span>
     </div>
 
     <div class="result-details">
@@ -21,11 +21,22 @@
       <button (click)="submitData(result)">Submit</button>
     </div>
 
-    <div class="result-details">
+    <!-- <div class="result-details">
       <p class="result-field">Comments:</p>
       <ul class="custom-list">
         <li *ngFor="let item of result.newDict" class="custom-item">
           <p>{{ item.fname }}: {{ item.value}}</p>
+        </li>
+      </ul>
+    </div> -->
+
+    <div class="result-details">
+      <p class="result-field">Comments:</p>
+      <ul class="custom-list">
+        <li *ngFor="let item of result.newDict" class="custom-item">
+          <p>{{ item.fname }}</p>
+          <br>
+          <span>{{ item.value }}</span>
         </li>
       </ul>
     </div>
@@ -59,5 +70,3 @@
     <hr class="result-divider">
   </li>
 </ul> -->
-
-

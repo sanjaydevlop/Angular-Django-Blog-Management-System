@@ -55,6 +55,22 @@
       "phone": "08688029341",
       "password": "qwe",
       "id": 7
+    },
+    {
+      "fname": "Hem",
+      "lname": "Hem",
+      "email": "sanjaysurya2527@gmail.com",
+      "phone": "08688029341",
+      "password": "Hem",
+      "id": 8
+    },
+    {
+      "fname": "Devansh",
+      "lname": "Devansh",
+      "email": "sanjaysurya2527@gmail.com",
+      "phone": "865676556765",
+      "password": "Dev",
+      "id": 9
     }
   ]
 }
