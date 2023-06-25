@@ -1,25 +1,35 @@
-<body>
+
 <!-- <mat-card class="animated-card">
   <mat-card-content>
     <h1 class="animated-heading">Hello, {{ displayname }}!!! Welcome to NSL Blogs</h1>
-  </mat-card-content>
-</mat-card> -->
-<mat-toolbar *ngIf="isVisible">
-  <div class="flex-container">
-  <button mat-button routerLink="/home" routerLinkActive="active" style="background-color: rgb(0, 195, 255);">
+  </mat-card-content> 
+</mat-card>-->
+
+<div class="flex-container">
+    <button mat-button routerLink="/myhome" routerLinkActive="active">
+      Home
+    </button>
+  <button mat-button routerLink="/home" routerLinkActive="active">
     Feed
   </button>
-  <button mat-button routerLink="/about" routerLinkActive="active">
+  <button mat-button routerLink="/about" routerLinkActive="active" *ngIf="isVisible">
     My Blogs
   </button>
-  <button mat-button routerLink="/form" routerLinkActive="active">
-    Create New Blog
+  <button mat-button routerLink="/form" routerLinkActive="active" *ngIf="isVisible">
+    New Blog
   </button>
-  <button mat-button routerLink="/search" routerLinkActive="active">
+  <button mat-button routerLink="/search" routerLinkActive="active" *ngIf="isVisible">
     Search
   </button>
+  <button mat-button routerLink="/login" routerLinkActive="active" *ngIf="Visible">
+    Login
+  </button>
+  <button mat-button routerLink="/profile" routerLinkActive="active" *ngIf="isVisible">
+    Profile
+  </button>
+  
 </div>
-</mat-toolbar>
+
 
 <router-outlet></router-outlet>
-</body>
+

@@ -14,26 +14,40 @@ export class SearchResultsComponent implements OnInit {
   isUpvote: boolean = true;
   comment: string="";
   displayname:null|string="";
+  newDict:any[]=[];
+  blogid:any;
   constructor(private route: ActivatedRoute, private http: HttpClient) { 
     this.searchTerm = null;
     
   }
 
   ngOnInit() {
+    
     let data=localStorage.getItem('fname');
     this.displayname=data;
     this.route.queryParams.subscribe(params => {
       this.searchTerm = params['searchTerm'];
+      this.blogid=params['blogid'];
+      console.log(this.searchTerm);
       this.search();
     });
+    this.getcommentsOfBlog();
   }
+
+  getcommentsOfBlog(){
+    this.http.get<any[]>("http://127.0.0.1:8000/getComment/"+this.blogid)
+        .subscribe(data => {
+          this.newDict=data;
+        });
+  }
+
 
   search() {
     console.log(this.searchTerm);
     if (this.searchTerm) {
-      this.http.get<any[]>(`http://localhost:4000/formData?name=${this.searchTerm}`)
+      this.http.get<any[]>(`http://127.0.0.1:8000/getBlogs/`+this.searchTerm)
         .subscribe(data => {
-          this.searchResults = data.sort((a, b) => a.name.localeCompare(b.name));
+          this.searchResults = data.sort((a, b) => a.nameb.localeCompare(b.nameb));
         });
     } else {
       this.searchResults = [];
@@ -46,20 +60,23 @@ export class SearchResultsComponent implements OnInit {
 
   submitData(result: any) {
     const formData = {
-      fname: this.displayname,  
-      value: this.comment
+      // fname: this.displayname,  
+      // value: this.comment
+      "cname":localStorage.getItem('fname'),
+      "blog":result.id,
+      "comment":this.comment
+      
+      
     };
+    console.log(formData);
   
-    if(this.comment!=""){
-      result.newDict.push(formData);
-    }
-  
-    this.http.put('http://localhost:4000/formData/' + result.id, result)
+    this.http.post('http://127.0.0.1:8000/comment', formData)
       .subscribe(() => {
         console.log('Data submitted successfully');
       }, (error) => {
         console.error('Error submitting data:', error);
       });
+      window.location.reload();
   }
   
 

@@ -38,31 +38,54 @@ export class SearchComponent {
   searchTerm: string = '';
   searchControl: FormControl = new FormControl();
   searchResults: any[] = [];
+  newA:any[]=[];
+  blogid:any;
 
   constructor(private router: Router, private http: HttpClient) {
     this.searchControl.valueChanges
       .pipe(
-        debounceTime(300),
+        debounceTime(1),
         distinctUntilChanged(),
         switchMap((term: string) => this.search(term))
       )
       .subscribe(results => {
-        this.searchResults = results;
+        this.searchResults = this.newA;
+        this.newA=[];
       });
   }
 
-  search(term: string) {
-    return this.http.get<any[]>(`http://localhost:4000/formData?name_like=${term}`);
+  search(term:string){
+    
+    this.http.get<any[]>("http://127.0.0.1:8000/getAll").subscribe((Response)=>{
+      for(const obj of Response){
+        if(obj.nameb.includes(term) && !this.newA.includes(obj.nameb)){
+          this.newA.push(obj.nameb);
+        }
+      }
+      console.log(this.newA);
+      
+    })
+
+    return this.newA;
   }
+
+
 
   onSearch() {
     this.route_to(this.searchControl.value);
   }
 
   route_to(s:string){
-    console.log(this.searchTerm);
+    this.http.get<any[]>("http://127.0.0.1:8000/getBlogs/"+s).subscribe((Response)=>{
+      for(const obj of Response){
+        this.blogid=obj.id
+      }
+      console.log(this.blogid);
+      console.log(this.searchTerm);
     this.searchTerm=s;
-    this.router.navigate(['/search-results/'+s], { queryParams: { searchTerm: this.searchTerm } }); 
+    this.router.navigate(['/search-results/'+s], { queryParams: { searchTerm: this.searchTerm,blogid:this.blogid } });
+    })
+    
     
     // this.router.navigate(['/search-results/'+s]); 
     
@@ -71,5 +94,3 @@ export class SearchComponent {
 }
 
 
-// setStudentId(): void { 
-// this.router.navigate(['/courses'], { queryParams: { studentId: this.studentId } }); }

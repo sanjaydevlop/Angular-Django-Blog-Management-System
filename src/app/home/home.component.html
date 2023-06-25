@@ -1,114 +1,17 @@
-<!-- <div class="homebar">
-  <div class="home-heading">Timeline</div>
-  <button class="logout-button" (click)="logout()">Logout</button>
-</div>
-
-<ng-container *ngIf="jsonData">
-  <div class="json-list" style="background-color: rgb(179, 179, 167);">
-    <div class="json-item" *ngFor="let item of jsonData" (mouseenter)="onCardHover(item)">
-      <div class="json-card" [ngClass]="{ 'hovered': item.hovered }" (click)="onCardClick(item.name)">
-        <p class="json-name">{{ item.name }}</p>
-        <p class="json-author" *ngIf="item.hovered">Author::{{ item.aname }}</p>
-      </div>
-    </div>
-  </div>
-</ng-container>
-
-<router-outlet></router-outlet> -->
-
-
-
-
-<!-- <ng-container *ngIf="jsonData">
-  <div class="json-list" style="background-color: rgb(128, 128, 51);">
-    <div class="json-item" *ngFor="let item of jsonData" (mouseenter)="onCardHover(item)">
-      <div class="json-card" [ngClass]="{ 'hovered': item.hovered }" (click)="onCardClick(item.name)">
-        <p class="json-name">{{ item.name }}</p>
-        <p class="json-author" *ngIf="item.hovered">Author: {{ item.aname }}</p>
-      </div>
-      <div class="json-details" [ngClass]="{ 'active': item.hovered }">
-        <div class="json-blog">
-          <p class="json-blog-text">{{ item.blog }}</p>
-          <a class="read-more" [routerLink]="['/search-results/'+item.name]" [queryParams]="{ searchTerm: item.name }">Read More</a>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</ng-container>
-
-<router-outlet></router-outlet>
-
-<style>
-  .json-card {
-    background-image: url('https://w0.peakpx.com/wallpaper/177/883/HD-wallpaper-dark-purple-plain-texture-dark-purple-thumbnail.jpg');
-    width: 400px; 
-    height: 400px; 
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 0px;
-    padding-top: 50px;
-    margin-bottom: 50px; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    color: aliceblue;
-  }
-
-  .json-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .json-author {
-    font-size: 16px;
-    margin-top: 10px;
-  }
-  .json-details {
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  .json-details.active {
-    display: block;
-  }
-
-  .json-blog-text {
-    margin-bottom: 10px;
-  }
-
-  .read-more {
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-</style> -->
-
 <div class="homebar">
   <div class="home-heading">Timeline</div>
-  <button class="logout-button" (click)="logout()">Logout</button>
+  <button class="logout-button" (click)="logout()" *ngIf="LoggedIn">Logout</button>
 </div>
 
 <ng-container *ngIf="jsonData">
-  <div class="json-list" style="background-color: rgb(100, 6, 110);">
+  <div class="json-list" style="background-color: rgb(54, 42, 55);">
     <div class="json-item" *ngFor="let item of jsonData; let i = index">
-      <div class="json-card" (click)="onCardClick(item.name)" [style.background-color]="getRandomColor(i)">
-        <h1 class="json-name"><strong>{{ item.name }}</strong></h1>
-        <br>
+      <div class="json-card" (click)="onCardClick(item.nameb)" [style.background-color]="getRandomColor(i)" style="background-size: cover; background-repeat: no-repeat;" [style.background-image]="'url('+ item.image + ')' ">
+        <h1 class="json-name"><strong>{{ item.nameb }}</strong></h1>
         <div class="json-footer">
           <button class="read-more">Read More</button>
         </div>
-        
-        <p style="font-size: 30px;">Blog By {{removeQuotes(item.aname)}}</p>
+        <p style="font-size: 30px; color: rgb(0, 0, 0);">Blog By <strong>{{removeQuotes(item.aname)}}</strong></p>
       </div>
     </div>
   </div>

@@ -29,6 +29,10 @@
       </div>
     </div>
     <div>
+      <label>Any Related Image you want to Upload??</label>
+      <input type="text" formControlName="image" class="newI">
+    </div>
+    <div>
       <label>Blog</label>
       <ckeditor [editor]="Editor" formControlName="blog" class="ck-editor__editable_inline"></ckeditor>
       <div *ngIf="reactiveForm.get('blog')?.invalid && reactiveForm.get('email')?.touched">

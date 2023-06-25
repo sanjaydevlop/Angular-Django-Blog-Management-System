@@ -4,8 +4,9 @@
   <li class="search-result-item" *ngFor="let result of searchResults">
     <div class="result-details">
       <p class="result-field">Name of the Blog:</p>
-      <p>{{ result.name }}</p>
+      <p>{{ result.nameb }}</p>
     </div>
+    
     <div class="result-details">
       <p class="result-field">Author Name:</p>
       <p>{{ result.aname }}</p>
@@ -21,22 +22,15 @@
       <button (click)="submitData(result)">Submit</button>
     </div>
 
-    <!-- <div class="result-details">
-      <p class="result-field">Comments:</p>
-      <ul class="custom-list">
-        <li *ngFor="let item of result.newDict" class="custom-item">
-          <p>{{ item.fname }}: {{ item.value}}</p>
-        </li>
-      </ul>
-    </div> -->
+
 
     <div class="result-details">
       <p class="result-field">Comments:</p>
       <ul class="custom-list">
-        <li *ngFor="let item of result.newDict" class="custom-item">
-          <p>{{ item.fname }}</p>
+        <li *ngFor="let item of newDict" class="custom-item">
+          <p>{{ item.cname }}</p>
           <br>
-          <span>{{ item.value }}</span>
+          <span>{{ item.comment }}</span>
         </li>
       </ul>
     </div>
@@ -48,25 +42,3 @@
 
 
 
-<!-- <h2 class="search-results-title">Search Results</h2>
-
-<ul class="search-results-list">
-  <li class="search-result-item" *ngFor="let result of searchResults">
-    <div class="result-details">
-      <p class="result-field">Name of the Blog:</p>
-      <p>{{ result.name }}</p>
-    </div>
-    <div class="result-details">
-      <p class="result-field">Author Name:</p>
-      <p>{{ result.aname }}</p>
-    </div>
-    <div class="result-details">
-      <p class="result-field">Blog:</p>
-      <p>{{ result.blog }}</p>
-    </div>
-    <button [ngClass]="{ 'button-upvote': isUpvote, 'button-downvote': !isUpvote }" (click)="toggleButton()">
-      {{ isUpvote ? 'Upvote' : 'Downvote' }}
-    </button>
-    <hr class="result-divider">
-  </li>
-</ul> -->

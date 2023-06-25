@@ -1,141 +1,57 @@
 {
   "formData": [
     {
-      "name": "Anand Mahindra",
-      "blog": "Anand Gopal Mahindra (born 1 May 1955) is an Indian billionaire businessman, and the chairman of Mahindra Group, a Mumbai-based business conglomerate.[3][4][5][6] The group operates in aerospace, agribusiness, aftermarket, automotive, components, construction equipment, defence, energy, farm equipment, finance and insurance, industrial equipment, information technology, leisure and hospitality, logistics, real estate and retail.[7] Mahindra is the grandson of Jagdish Chandra Mahindra, co-founder of Mahindra & Mahindra.\n\nAs of 2023, his net worth according to Forbes was estimated to be $2.1 billion.[8] He is an alumnus of Harvard University and Harvard Business School.[9] In 1996, he established Nanhi Kali, a non-government organisation that supports education for underprivileged girls in India.[10]\n\nHe is included by Fortune Magazine among the 'World's 50 Greatest Leaders',[11] and was in the magazine's 2011 listing of Asia's 25 most powerful businesspeople.[12] Anand was noted by Forbes (India) as their 'Entrepreneur of the Year' for 2013.[13] He was given the Padma Bhushan Award, the third Highest civilian award in India, in January 2020.",
-      "aname": "\"Subbu\"",
-      "newDict": [
-        {
-          "fname": "\"Sanjay\"",
-          "value": "Wowww"
-        },
-        {
-          "fname": "\"Subbu\"",
-          "value": "fFSGDSAD"
-        }
-      ],
-      "id": 4
-    },
-    {
-      "name": "Virat Kohli",
-      "blog": "Virat Kohli",
-      "aname": "\"Subbu\"",
-      "newDict": [],
-      "id": 5
-    },
-    {
-      "name": "Good",
-      "blog": "Good",
-      "aname": "\"Subbu\"",
-      "newDict": [],
-      "id": 6
-    },
-    {
-      "name": "dfsdasdsfc",
-      "blog": "asdfsdafv",
-      "aname": "\"Subbu\"",
+      "name": "Dog",
+      "image": "https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg",
+      "blog": "<p>dtfuygidhojsdadsadsadasda</p>",
+      "aname": "\"Karthika\"",
       "newDict": [],
       "id": 7
     },
     {
-      "name": "Kaathikaaa",
-      "blog": "asdfsdf",
-      "aname": "\"Subbu\"",
-      "newDict": [],
+      "name": "Horse",
+      "image": "https://d1434x6susbirc.cloudfront.net/breed-discipline/_t600px/Great-Lakes-Friesian.jpg",
+      "blog": "<p>Horse</p>",
+      "aname": "\"Karthika\"",
+      "newDict": [
+        {
+          "fname": "\"Karthika\"",
+          "value": "Hi"
+        }
+      ],
       "id": 8
     },
     {
-      "name": "Jaaaa",
-      "blog": "<p><i><strong>Jaaaaa</strong></i></p>",
-      "aname": "\"Subbu\"",
-      "newDict": [
-        {
-          "fname": "\"Subbu\"",
-          "value": "thokkale"
-        },
-        {
-          "fname": "\"Subbu\"",
-          "value": "Pora "
-        }
-      ],
+      "name": "The Huffington Post",
+      "image": "",
+      "blog": "<p>The Huffington Post</p>",
+      "aname": "\"Sanjay\"",
+      "newDict": [],
       "id": 9
     },
     {
-      "name": "Okay",
-      "blog": "<p><i><strong>Okay</strong></i></p>",
-      "aname": "\"Subbu\"",
+      "name": "Mashable",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAkFBMVEUKGCn///8AAAAAABoAABMEFSfn6OoAAA4AAAcAABx+goitsLPR09bc3N7U1tkAABCQk5gAABfDxci4ur4ADyMADSKYm6FAR1GKjpPIys0AAAoABR55foRZX2dgZW3t7u9JUFk8RE9qb3edoaYTIDBIT1hSWWInMD3i4+Q2PUm8vsKnqq9bYmofKjlla3MAAB+jj65IAAAEwklEQVR4nO3Y7XaqOBgFYAhEQEVAQEGsWK3fY+f+724S3iRAO9Uza/WHzNrPj7M0JBT2CW8ilgUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPD7qkhIui2ubMmfj0w8IXnYxZVdnP846HVV63QySfertiWZCOnb07SS/fx6ne8f3bg7kV0WnbSS29NBL8yd2NKmMg2LpmEcPBvpz2S/0H/QhdWyy7TzP8HOTwe9MBVWzdR3/mH/aVhT2W/2MKyR7FJ2wwqfDnphKiw7duk7u/56WHOv0/K/CMvmXH7NlzbC+pEJK20eRKopJqw8YszLLe4ITcXnjsdEk5OZsJjjMz/h6nSVOOxmViYHZCYseRpaX3thyc6+6D0YJix7Ke7GWdvdsFaHdDS6Hn0rLoriUxwPeDE/1+G8OGUmrHhWh/uPZoHg/mY+Ok/evYsYEG8zFRbbNqeRpasTVu7trud6dlv6/OEVvpA2rJBZ3LW7YbEbfd7/Jf+9Rpa7M8fvnMI6q6n4LiYIT0r6so6bMuhQWCmtr/aEdcNKtrWe095Q0mrDsneBd+uGxcyh5rbSKH8zh+1TRmFpI5nErDdAh6VDscVuzoRVHduxJXt+nS+hE1bN7u0NjIOqEw2F5Yc/h2W/5U7RH6DDar1nOiyed9ufryavoROWHc+719/OExWWRw9pubiV9few4sTv9/+XsNJIh+XSHN7vmj9SD2RqUVjXur2jaVOFxolFX9f8EvbCSt/Ferg7qZplf/5NE2qxUg/WW66qkQnrev/Y0zGmw6K9/VacqWk/DWNJVGF9tmGdmjsce9S0YLzialqYx3C6Zno1DBlnqiPV8Y3Lk2MvrJplnFHp148ho98JszCkU+6q51f6AiisOTPlKKU7HPvj5qtc5WjzJQp8W5TPFjebUh0WPdByaWO9sK5iz+DQ2S46rK3dM5CipcM66OvOVVgr2nIdc/17OI2s6GAynfo/hJVzvQPRYcnFzo1p1uqw9A8FZVgzy9O/CQtXhRXRNCpZwuiBTKPswNhyoeo+Z1/Dotq1FwMWvbDsu+dS3ravwwqox+EobY/3Yey0dFic6rlYl1RYjqemUKE2X2Ipq8vPnKlH6PI1rOhC/eZFavfDqhcxfQjbAk9TdC0qPPuIP4cxsUxY6j3WptJhBV7af1REWPJIXf8wsxIW9gd83zoUjg4rUL8F6tl0NJiS1YbVVKYps0xY+s3Wl7CUGftas5L8SyH6FtbIb3fwankkwwur2pTlJWvDsgKzhU9VWJ3dmN6UdsKyIr2Fr8tuWLd2TBsW9zppDSusUr5yqjxP7g0pEnn9yaHZM4yW7xSWU+iZMj9V1kq/VjZhWatdM3ZmjbthMXrkpndRmWirNhObCc7W+rGdHYaxJ7XyjXz90l26g7FoiJvrz1fHojh6eWZxLnYElrM67Yp4vLFW8h2DbJSt6kMz1hWnW/pZZo5JQbCLxxdfntEMkp19OtuHP5CsRCDyPV1vNQrozZ0+Kl/acR1HVjlOUFEyXLeao+Jj7gR6QHuEV06gTsg7nXtnAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+HX/ADq7Se/C4EjMAAAAAElFTkSuQmCC",
+      "blog": "<p>Mashable</p>",
+      "aname": "\"Sanjay\"",
       "newDict": [],
       "id": 10
     },
     {
-      "name": "Sathvik Reddy",
-      "blog": "<h2>Sathvik Reddy got the Visa</h2><p>&nbsp;</p><p><i><strong>Understood???</strong></i></p>",
-      "aname": "\"Subbu\"",
+      "name": "sdfsdsf",
+      "image": "",
+      "blog": "<h2>sddfggdsaSD</h2><p>&nbsp;</p><p><i><strong>ASDFGDSASdfghj</strong></i></p>",
+      "aname": "\"Sanjay\"",
       "newDict": [],
       "id": 11
     },
     {
-      "name": "Jayayaya",
-      "blog": "<figure class=\"table\"><table><tbody><tr><td>fdsadfgdsaFG</td><td>SDFGHJHGFDSA</td><td>DFGHJHGFDSASDFVBVDSA</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure>",
-      "aname": "\"Subbu\"",
+      "name": "New York",
+      "image": "",
+      "blog": "<h3><i><strong>sabidhasojldsakdnsalnfsaf</strong></i></h3>",
+      "aname": "\"Karthika\"",
       "newDict": [],
       "id": 12
-    },
-    {
-      "name": "UMBC",
-      "blog": "<ol><li>This year’s rankings show UMBC jumping an impressive 25 spots on the list of Best National Universities and appearing on several other prestigious lists, distinguishing the university’s achievements on a national stage. This year’s rankings show UMBC jumping an impressive 25 spots on the list of Best National Universities and appearing on several other prestigious lists, distinguishing the university’s achievements on a national stage. This year’s rankings show UMBC jumping an impressive 25 spots on the list of Best National Universities and appearing on several other prestigious lists, distinguishing the university’s achievements on a national stage. This year’s rankings show UMBC jumping an impressive 25 spots on the list of Best National Universities and appearing on several other prestigious lists, distinguishing the university’s achievements on a national stage.&nbsp;</li><li>This year’s rankings show UMBC jumping an impressive 25 spots on the list of Best National Universities and appearing on several other prestigious lists, distinguishing the university’s achievements on a national stage.&nbsp;</li></ol><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>",
-      "aname": "\"Subbu\"",
-      "newDict": [],
-      "id": 13
-    },
-    {
-      "name": "Shitij",
-      "blog": "<p>hello</p><p>Shitij&nbsp;</p><p>Bhai</p>",
-      "aname": "\"Subbu\"",
-      "newDict": [],
-      "id": 14
-    },
-    {
-      "name": "Head",
-      "blog": "<p><i><strong>Head &nbsp;hj</strong></i></p><p>&nbsp;</p><p>&nbsp;</p><p>awdaesfaedawdaesfaed</p>",
-      "aname": "\"Subbu\"",
-      "newDict": [],
-      "id": 15
-    },
-    {
-      "name": "Link",
-      "blog": "<p><a href=\"https://ckeditor.com/docs/ckeditor5/latest/support/faq.html#how-to-get-the-editor-instance-object-from-the-dom-element\">https://ckeditor.com/docs/ckeditor5/latest/support/faq.html#how-to-get-the-editor-instance-object-from-the-dom-element</a></p><p>Hello</p>",
-      "aname": "\"Subbu\"",
-      "newDict": [],
-      "id": 16
-    },
-    {
-      "name": "qwe",
-      "blog": "<p>qwe</p><p>&nbsp;</p><figure class=\"table\"><table><thead><tr><th>ok</th><th>ok</th><th>ss</th></tr><tr><th>ok</th><th>ok</th><th>ss</th></tr></thead></table></figure>",
-      "aname": "\"Subbu\"",
-      "newDict": [],
-      "id": 17
-    },
-    {
-      "name": "asdffdsadfsad",
-      "blog": "<ul><li>asdsfsddfdsdsf</li></ul>",
-      "aname": "\"Subbu\"",
-      "newDict": [],
-      "id": 18
-    },
-    {
-      "name": "wertghjuytrewq",
-      "blog": "<p><strong>fgfdsaAX</strong></p>",
-      "aname": "\"Subbu\"",
-      "newDict": [],
-      "id": 19
-    },
-    {
-      "name": "xscdfgfdsadf",
-      "blog": "<h2>sdfgdfsdafg</h2><p>&nbsp;</p><p><i>dsfdsdfdsfdsfdsf</i></p>",
-      "aname": "\"Subbu\"",
-      "newDict": [],
-      "id": 20
     }
   ]
 }

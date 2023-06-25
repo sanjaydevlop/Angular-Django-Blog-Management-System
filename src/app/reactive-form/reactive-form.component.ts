@@ -23,8 +23,9 @@ export class ReactiveFormComponent implements OnInit{
     this.displayname=data;
     this.reactiveForm = new FormGroup({
       name: new FormControl('', Validators.required),
+      image: new FormControl(''),
       blog: new FormControl('', [Validators.required]),
-      aname: new FormControl({ value: this.displayname, disabled: false}),
+      aname: new FormControl({ value: localStorage.getItem('fname'), disabled: false}),
       newDict: new FormControl([]),
       
       
@@ -44,20 +45,24 @@ export class ReactiveFormComponent implements OnInit{
       const cleanedBlogContent = this.stripHtmlTags(formData.blog);
       const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
       const options = { headers: headers };
-      this.http.get<any[]>(`http://localhost:4000/formData?name=${formData.name}`)
+      this.http.get<any[]>(`http://127.0.0.1:8000/getBlogs/${formData.name}`)
         .subscribe(
           response => {
             if (response.length > 0) {
-              alert('Name of the Blog must be unique');
-            } else {
+               alert('Name of the Blog must be unique');
+           } else {
+            const data={"nameb":this.reactiveForm.value.name,
+            "aname":localStorage.getItem('fname'),
+            "blog":this.reactiveForm.value.blog
+                }
               formData.blog = cleanedBlogContent;
-              this.http.post('http://localhost:4000/formData', formData, options)
+              this.http.post("http://127.0.0.1:8000/create",data)
                 .subscribe(
                   () => {
                     console.log('Form data uploaded successfully');
                     alert('Blog Added');
                     
-                    this.reactiveForm.reset();
+                    //this.reactiveForm.reset();
                   },
                   error => {
                     console.log('Error uploading form data:', error);
@@ -71,7 +76,9 @@ export class ReactiveFormComponent implements OnInit{
         );
     } else {
       console.log('Form is invalid');
-    }
+     }
+   
+  
   }
   
   

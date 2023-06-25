@@ -1,33 +1,37 @@
+.flex-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #184e6a; */
+  background-color: #283140;
+
+  display: flex;
+  align-items: center;
+  height: 100px;
+  
+}
+
+
 button {
     padding: 10px 20px;
     background-color: #f6e01c;
     color: #490202;
-    border: none;
+    border: rgb(89, 52, 3) solid;
     border-radius: 40px;
     cursor: pointer;
     font-size: 24px;
+    align-self: center;
     height: 48px; 
-    min-width: 120px;
-
-  }
-
-  .flex-container {
-    flex-direction: row;
-    
-    display: flex;
-    align-items: center;
-    width: 100%;
-    gap: 230px;
-    
-  }
-
-mat-toolbar {
-  background-color: #184e6a;
-  display: flex;
-  
-  align-items: center;
-  padding: 0 16px;
+    width: 12px;
+    flex: 1;
+    margin: 0 5px;
+    padding-top: auto;
+    padding-bottom: auto; 
 }
+
+
+  
+
 
 
 

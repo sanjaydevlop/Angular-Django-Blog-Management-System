@@ -24,6 +24,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { MyhomeComponent } from './myhome/myhome.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { MyhomeComponent } from './myhome/myhome.component';
     SearchResultsComponent,
     LoginComponent,
     SingupComponent,
-    MyhomeComponent
+    MyhomeComponent,
+    ProfileComponent
   ],
   imports: [
     MatFormFieldModule,
@@ -56,13 +58,15 @@ import { MyhomeComponent } from './myhome/myhome.component';
       { path: 'about', canActivate:[AuthGuard],component: AboutComponent },
       { path: 'contact', canActivate:[AuthGuard],component: ContactComponent },
       { path: 'form',canActivate:[AuthGuard], component: ReactiveFormComponent},
-      { path: 'search-results/:searchTerm', canActivate:[AuthGuard],component: SearchResultsComponent },
+      { path: 'search-results/:searchTerm',component: SearchResultsComponent },
       { path: 'bar-graph',canActivate:[AuthGuard], component: BarGraphComponent },
       { path: 'search',canActivate:[AuthGuard], component: SearchComponent },
       { path: 'signup', component: SingupComponent },
       { path: 'login', component: LoginComponent },
-      {path:'home',canActivate:[AuthGuard],component:HomeComponent},
-      {path:'myhome',canActivate:[AuthGuard],component:MyhomeComponent}
+      {path:'home',component:HomeComponent},
+      {path:'myhome',component:MyhomeComponent},
+      {path:'profile',component:ProfileComponent},
+      { path: '', component: MyhomeComponent}
 
       
     ]),

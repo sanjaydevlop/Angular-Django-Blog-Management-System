@@ -12,6 +12,7 @@ export class AppComponent{
   title='product-list';
   displayname:null|string="";
   isVisible:boolean=false;
+  Visible:boolean=true;
   
   var1=localStorage.getItem('fname');
   constructor(private authService: AuthService) {}
@@ -20,6 +21,7 @@ export class AppComponent{
   ngOnInit(): void {
     if(this.authService.isLoggedIn()){
       this.isVisible=true;
+      this.Visible=false;
     }
     let data=localStorage.getItem('fname');
     this.displayname=data;

@@ -11,19 +11,21 @@ import { LoginComponent } from './login/login.component';
 import { SingupComponent } from './signup/signup.component';
 import { AuthGuard } from './auth.guard';
 import { MyhomeComponent } from './myhome/myhome.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
-  // { path: '', component: SingupComponent},
+  { path: '', component: MyhomeComponent},
   { path: 'about', component: AboutComponent,canActivate:[AuthGuard]},
   { path: 'contact', component: ContactComponent,canActivate:[AuthGuard] },
   { path: 'form', component: ReactiveFormComponent,canActivate:[AuthGuard]},
-  { path: 'search-results/:searchTerm', component: SearchResultsComponent,canActivate:[AuthGuard] },
+  { path: 'search-results/:searchTerm',canActivate:[AuthGuard] },
   { path: 'bar-graph', component: BarGraphComponent,canActivate:[AuthGuard]},
   { path: 'search', component: SearchComponent,canActivate:[AuthGuard]},
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SingupComponent },
-  {path:'home',canActivate:[AuthGuard],component:HomeComponent},
-  {path:'myhome',canActivate:[AuthGuard],component:MyhomeComponent}
+  {path:'home',component:HomeComponent},
+  {path:'myhome',component:MyhomeComponent},
+  {path:'profile',component:ProfileComponent}
 
 ];
 

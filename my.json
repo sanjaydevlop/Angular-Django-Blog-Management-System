@@ -1,76 +1,44 @@
 {
   "signup": [
     {
-      "fname": "Manoj",
-      "lname": "Adhikari",
-      "email": "manojadhikari@gmail.com",
-      "phone": "234324234",
-      "password": "asdasdf",
+      "fname": "Subbu",
+      "lname": "k",
+      "email": "sanjaysurya2527@gmail.com",
+      "phone": "08688029341",
+      "password": "subbu",
       "id": 1
     },
     {
-      "fname": "shivam",
-      "lname": "adhikari",
-      "email": "shivamadhikari@gmail.com",
-      "phone": "32432",
-      "password": "asdf",
+      "fname": "Karthika",
+      "lname": "p",
+      "email": "sanjaysurya2527@gmail.com",
+      "phone": "08688029341",
+      "password": "kar",
       "id": 2
     },
     {
       "fname": "Sanjay",
       "lname": "Surya",
       "email": "sanjaysurya2527@gmail.com",
-      "phone": "8688029341",
-      "password": "qwertyuiop",
+      "phone": "08688029341",
+      "password": "Sanjay",
       "id": 3
     },
     {
-      "fname": "Shitij",
-      "lname": "Reddy",
+      "fname": "Don",
+      "lname": "Don",
       "email": "sanjaysurya2527@gmail.com",
-      "phone": "8688029341",
-      "password": "qwer",
+      "phone": "08688029341",
+      "password": "Don",
       "id": 4
     },
     {
-      "fname": "Subbu",
-      "lname": "Subbu",
+      "fname": "Feroz",
+      "lname": "Gandhi",
       "email": "sanjaysurya2527@gmail.com",
-      "phone": "8688029341",
-      "password": "Subbu",
+      "phone": "08688029341",
+      "password": "Feroz",
       "id": 5
-    },
-    {
-      "fname": "Shubman",
-      "lname": "Gill",
-      "email": "sanjaysurya2527@gmail.com",
-      "phone": "8688029341",
-      "password": "123",
-      "id": 6
-    },
-    {
-      "fname": "Gill",
-      "lname": "Gill",
-      "email": "sanjaysurya2527@gmail.com",
-      "phone": "08688029341",
-      "password": "qwe",
-      "id": 7
-    },
-    {
-      "fname": "Hem",
-      "lname": "Hem",
-      "email": "sanjaysurya2527@gmail.com",
-      "phone": "08688029341",
-      "password": "Hem",
-      "id": 8
-    },
-    {
-      "fname": "Devansh",
-      "lname": "Devansh",
-      "email": "sanjaysurya2527@gmail.com",
-      "phone": "865676556765",
-      "password": "Dev",
-      "id": 9
     }
   ]
 }

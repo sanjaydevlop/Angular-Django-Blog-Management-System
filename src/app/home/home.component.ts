@@ -3,6 +3,7 @@ import { FormDataService } from '../form-data.service';
 import { HttpClient } from '@angular/common/http';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
+import { subscribeOn } from 'rxjs-compat/operator/subscribeOn';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,15 +16,25 @@ export class HomeComponent {
   age: number | null = null;
   jsonData: any[]=[];
   searchTerm: string = '';
+  LoggedIn:boolean=false;
+  blogid:any;
 
   constructor(private formDataService: FormDataService,private auth:AuthService,private http:HttpClient,private router:Router) {}
   ngOnInit() {
+    if(localStorage.getItem('fname')!=null){
+      this.LoggedIn=true;
+    }
     this.fetchData();
   }
 
+
   fetchData() {
-    this.http.get<any[]>('http://localhost:4000/formData').subscribe(data => {
+    this.http.get<any[]>('http://127.0.0.1:8000/getAll').subscribe(data => {
       this.jsonData = data;
+      for(const ele of this.jsonData)
+      {
+        console.log(ele);
+      }
     });
   }
   logout(){
@@ -39,10 +50,18 @@ export class HomeComponent {
   onCardHover(item: any) {
     item.hovered = !item.hovered;
   }
-  onCardClick(name: string) {
-    this.searchTerm=name;
-    this.router.navigate(['/search-results/'+name], { queryParams: { searchTerm: this.searchTerm } }); 
-  }
+  onCardClick(s: string) {
+    
+      this.http.get<any[]>("http://127.0.0.1:8000/getBlogs/"+s).subscribe((Response)=>{
+        for(const obj of Response){
+          this.blogid=obj.id
+        }
+        console.log(this.blogid);
+        console.log(this.searchTerm);
+      this.searchTerm=s;
+      this.router.navigate(['/search-results/'+s], { queryParams: { searchTerm: this.searchTerm,blogid:this.blogid } });
+      }) 
+}
   getRandomColor(index: number): string {
     const colors = [
       'rgb(172, 221, 222)',

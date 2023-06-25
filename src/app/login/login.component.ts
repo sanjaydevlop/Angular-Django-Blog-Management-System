@@ -13,8 +13,8 @@ declare var $:any;
 })
 export class LoginComponent implements OnInit {
   user: any;
-  displayfname:any="";;
- 
+  displayfname:any="";
+  
  
   constructor(private _http:HttpClient, private _route:Router
               , private dataService : DataService,private auth:AuthService) {}
@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     
     if(this.auth.isLoggedIn()){
+     
       this._route.navigate(['home'])
     }
   }
@@ -51,6 +52,7 @@ export class LoginComponent implements OnInit {
     
     (result) => {
     console.log("Hello")
+    this.displayname();
     this._route.navigate(['home'])
     
     },(err:Error)=>{

@@ -20,7 +20,7 @@
 <ul class="dropdown-list" *ngIf="searchResults.length > 0">
   <li class="dropdown-item" *ngFor="let result of searchResults">
     
-    <button (click)="route_to(result.name)">{{ result.name }}</button>
+    <button (click)="route_to(result)">{{ result }}</button>
 
   </li>
 </ul>
