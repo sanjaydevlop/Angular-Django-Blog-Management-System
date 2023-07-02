@@ -12,7 +12,7 @@ import { SingupComponent } from './signup/signup.component';
 import { AuthGuard } from './auth.guard';
 import { MyhomeComponent } from './myhome/myhome.component';
 import { ProfileComponent } from './profile/profile.component';
-
+import { GsignComponent } from './gsign/gsign.component';
 const routes: Routes = [
   { path: '', component: MyhomeComponent},
   { path: 'about', component: AboutComponent,canActivate:[AuthGuard]},
@@ -25,7 +25,8 @@ const routes: Routes = [
   { path: 'signup', component: SingupComponent },
   {path:'home',component:HomeComponent},
   {path:'myhome',component:MyhomeComponent},
-  {path:'profile',component:ProfileComponent}
+  {path:'profile',component:ProfileComponent},
+  {path:'gsign',component:GsignComponent}
 
 ];
 

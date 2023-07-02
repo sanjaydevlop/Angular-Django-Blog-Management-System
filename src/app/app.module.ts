@@ -1,3 +1,9 @@
+import { SocialLoginModule, SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
+import {
+  GoogleLoginProvider,GoogleSigninButtonModule
+  
+} from '@abacritt/angularx-social-login';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -25,6 +31,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { MyhomeComponent } from './myhome/myhome.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { GsignComponent } from './gsign/gsign.component';
 
 @NgModule({
   declarations: [
@@ -40,9 +48,12 @@ import { ProfileComponent } from './profile/profile.component';
     LoginComponent,
     SingupComponent,
     MyhomeComponent,
-    ProfileComponent
+    ProfileComponent,
+    GsignComponent
   ],
+  
   imports: [
+    SocialLoginModule,
     MatFormFieldModule,
     MatCardModule,
     MatIconModule,
@@ -66,13 +77,36 @@ import { ProfileComponent } from './profile/profile.component';
       {path:'home',component:HomeComponent},
       {path:'myhome',component:MyhomeComponent},
       {path:'profile',component:ProfileComponent},
-      { path: '', component: MyhomeComponent}
+      { path: '', component: MyhomeComponent},
+      {path:'gsign',component:GsignComponent}
 
       
     ]),
     BrowserAnimationsModule
   ],
-  providers: [AuthGuard],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  providers: [AuthGuard,
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(
+              '20153140696-khqmo2d7kbkp9abb7gdisvf2hlgaoh6h.apps.googleusercontent.com'
+            )
+          },
+         
+        ],
+        onError: (err) => {
+          console.error(err);
+        }
+      } as SocialAuthServiceConfig,
+    }
+  
+  
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

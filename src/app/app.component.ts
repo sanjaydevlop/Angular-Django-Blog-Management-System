@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthService } from './auth.service';
 import { LoginComponent } from './login/login.component';
-
+import {SocialAuthService } from '@abacritt/angularx-social-login';
 
 @Component({
   selector: 'app-root',
@@ -13,12 +13,15 @@ export class AppComponent{
   displayname:null|string="";
   isVisible:boolean=false;
   Visible:boolean=true;
-  
+  user:any;
+  loggedIn:any;
   var1=localStorage.getItem('fname');
   constructor(private authService: AuthService) {}
   val:boolean=false;
   
   ngOnInit(): void {
+
+    console.log(this.authService.isLoggedIn());
     if(this.authService.isLoggedIn()){
       this.isVisible=true;
       this.Visible=false;
@@ -47,3 +50,6 @@ export class AppComponent{
 
 
 }
+
+
+

@@ -1,23 +1,4 @@
 <body>
-  <!-- <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()" id="check">
-
-    <div>
-      <label>Name of the Blog</label>
-      <input type="text" formControlName="name">
-      <div *ngIf="reactiveForm.get('name')?.invalid && reactiveForm.get('name')?.touched">
-        <div *ngIf="reactiveForm.get('name')?.errors?.['required']">Name is required</div>
-      </div>
-    </div>
-    <div>
-      <label>Blog</label>
-      <quill-editor formControlName="blog" [modules]="getQuillConfig()" style="width: 94%; height: 200px;"></quill-editor>
-      <div *ngIf="reactiveForm.get('blog')?.invalid && reactiveForm.get('blog')?.touched">
-        <div *ngIf="reactiveForm.get('blog')?.errors?.['required']">Blog is required</div>
-      </div>
-    </div>
-  
-    <button type="submit" [disabled]="reactiveForm.invalid">Submit</button>
-  </form> -->
   
 <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()" id="check">
  
@@ -28,10 +9,10 @@
         <div *ngIf="reactiveForm.get('name')?.errors?.['required']">Name is required</div>
       </div>
     </div>
-    <div>
+    <!-- <div>
       <label>Any Related Image you want to Upload??</label>
       <input type="text" formControlName="image" class="newI">
-    </div>
+    </div> -->
     <div>
       <label>Blog</label>
       <ckeditor [editor]="Editor" formControlName="blog" class="ck-editor__editable_inline"></ckeditor>

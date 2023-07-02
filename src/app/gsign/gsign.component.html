@@ -1,0 +1,22 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<asl-google-signin-button *ngIf="!user" style="margin-top: 200px;"></asl-google-signin-button>
+
+
+<div *ngIf="user">
+  <img src="{{ user.photoUrl }}">
+  <div>
+    <h4>{{ user.name }}</h4>
+    <p>{{ user.email }}</p>
+  </div>
+</div>

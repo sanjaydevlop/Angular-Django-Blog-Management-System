@@ -50,16 +50,26 @@ export class AuthService {
     this.logoutEvent.emit();
     
   }
-  
-
-  login({ fname, password }: any): Observable<any> {
-    const user = this.users.find(u => u.fname === fname && u.password === password);
-    if (user) {
-      this.setToken('abcdef');
-      this.loginEvent.emit();
-      return of(user);
-    } else {
-      return throwError(new Error('Failed to Login'));
+  login(input:any){
+    const data={
+      "username":input.fname,
+      "password":input.password,
     }
+    
+    this.loginEvent.emit();
+
+    return this.http.post("http://127.0.0.1:8000/loginuser",data);
+    
   }
+
+  // login({ fname, password }: any): Observable<any> {
+  //   const user = this.users.find(u => u.fname === fname && u.password === password);
+  //   if (user) {
+  //     this.setToken('abcdef');
+  //     this.loginEvent.emit();
+  //     return of(user);
+  //   } else {
+  //     return throwError(new Error('Failed to Login'));
+  //   }
+  // }
 }

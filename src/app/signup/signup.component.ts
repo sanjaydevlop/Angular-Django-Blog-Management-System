@@ -29,7 +29,7 @@ export class SingupComponent implements OnInit {
 
   singupdata(singup:FormGroup){
     this.signuser = this.singup.value.fname
-    this._http.post<any>("http://localhost:3000/signup", this.singup.value)
+    this._http.post<any>("http://127.0.0.1:8000/createuser/", this.singup.value)
     .subscribe(res=>{
       alert('data added successfully');
       this.singup.reset();
